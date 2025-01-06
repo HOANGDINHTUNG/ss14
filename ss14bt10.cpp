@@ -20,11 +20,11 @@ int main() {
         if (!found) {
             kytu[index] = chuoi[i];
             countHideKytu[index] = 1;
-            dem++;
+            index++;
         }
     }
     printf("Ky tu\tSo lan xuat hien\n");
-    for (i = 0; i < dem; i++) {
+    for (int i = 0; i < index; i++) {
         printf("%c\t%d\n", kytu[i], countHideKytu[i]);
     }
 
